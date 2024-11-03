@@ -1,0 +1,112 @@
+/* TODA esta zona representa la barra de menu */ 
+nav {
+    /* Esto es para añadirle propiedades */
+    /* Esto es para la posicion*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+   
+    /* Este su color de fondo */
+    background-color: #c94a6a;
+    /* Color de la letra */
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+  
+  nav.active {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  /* nav h2.logo {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #ff702a;
+    margin-left: 800px;
+  } */
+  
+  /*
+  nav .bars {
+    position: absolute;
+    right: 1rem;
+    font-size: xx-large;
+    display: none;
+  } */
+  
+  ul.nav-links {
+    display: flex;
+  }
+  
+  /* responsive */
+  nav.active ul.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  li.nav-link {
+    list-style: none;
+    margin: 0.5rem 1rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Lo que sucede cuando el cursor este por encima de esta zona*/
+  li.nav-link:hover {
+      background: #dfdfdf;
+      color: rgb(255, 255, 255);
+      border: 1px solid #a4a5a5;
+      border-radius: 5px;
+  }
+   
+  
+  li.nav-link a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 800px) {
+    nav .bars {
+      display: block;
+    }
+  
+    nav .nav-links {
+      display: none;
+    }
+}
+
+.nav-link3 {
+    margin-right: 100px !important;
+}
+/* HASTA AQUI */
+
+body {
+    margin: 0;
+    /* Agregar un degradado */
+    background-image: linear-gradient(to top, #812763 0%, #c94a6a 100%);
+    /* Que no se repita la "imagen" */
+    background-repeat: no-repeat;
+    /* Que ocupe todo el espacio disponible */
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+
+.Titulo{
+    /* Propiedades del titulo */
+    /* Posicion */
+    text-align: center;
+    margin: auto;
+    /* Color de letra*/
+    color: white;
+    /* Tamaño de letra */
+    font-size: 70px;
+    /* Espacio desde la parte superior de pagina hasta el texto */
+    margin-top: 400px;
+}
